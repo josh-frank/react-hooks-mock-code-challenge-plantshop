@@ -19,7 +19,10 @@ function PlantCard( { plant, allPlants, setPlants } ) {
     } );
   }
 
-  // console.log( editPriceFieldState );
+  function deletePlant() {
+    fetch( `${ APIUrl }/${ plant.id }`, { method: "DELETE" } );
+    setPlants( allPlants.filter( eachPlant => eachPlant.id !== plant.id ) );
+  }
 
   return (
     <li className="card">
@@ -38,6 +41,7 @@ function PlantCard( { plant, allPlants, setPlants } ) {
       ) : (
         <button onClick={ () => toggleInStock( true ) }>Out of Stock</button>
       )}
+      <button className="alert" onClick={ deletePlant }>Delete</button>
     </li>
   );
 

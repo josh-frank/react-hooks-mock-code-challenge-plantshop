@@ -40,13 +40,25 @@
       "id": 7,
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
-      "price": 55
+      "price": "54.99"
     },
     {
       "name": "Audrey Jr.",
       "image": "https://bloody-disgusting.com/wp-content/uploads/2019/06/Little-Shop-of-Horrors-e1560782203967.jpg",
       "price": "99.99",
       "id": 8
+    },
+    {
+      "name": "Corpse flower",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Amorphophallus_titanum_%28corpse_flower%29_-_2.jpg/440px-Amorphophallus_titanum_%28corpse_flower%29_-_2.jpg",
+      "price": "399.99",
+      "id": 9
+    },
+    {
+      "name": "Powder puff flower",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Red_powder_puff.JPG/1920px-Red_powder_puff.JPG",
+      "price": "26.99",
+      "id": 10
     }
   ]
 }
