@@ -11,7 +11,11 @@ function PlantPage( { allPlants, setPlants } ) {
     <main>
       <NewPlantForm allPlants={ allPlants } setPlants={ setPlants }/>
       <Search searchQuery={ searchQuery } setSearchQuery={ setSearchQuery }/>
-      <PlantList filteredPlants={ allPlants.filter( plant => plant.name.toLowerCase().includes( searchQuery.toLowerCase() ) ) }/>
+      <PlantList
+        allPlants={ allPlants }
+        filteredPlants={ allPlants.filter( plant => plant.name.toLowerCase().includes( searchQuery.toLowerCase() ) ) }
+        setPlants={ setPlants }
+      />
     </main>
   );
   
